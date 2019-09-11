@@ -14,7 +14,7 @@ class Rules extends Component {
         let minusPoints = "No minus points"
 
         if (this.props.minusPoints) {
-            minusPoints = `You lose ${this.props.minusPoints} when you click red object.`
+            minusPoints = `You lose ${this.props.minusPoints} points when you click red object.`
         }
 
         return (

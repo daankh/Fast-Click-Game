@@ -38,7 +38,7 @@ class Settings extends Component {
                         value="1"
                         className="selectDificultyLevel__radio"
                         checked={Number(this.state.difficultyLevel) === 1} />
-                    <span className="selectDificultyLevel__text">1</span>
+                    <span className="selectDificultyLevel__text selectDificultyLevel__text--green">1</span>
                 </label>
                 <label className="selectDificultyLevel">
                     <input type="radio"
@@ -46,16 +46,16 @@ class Settings extends Component {
                         name="difficultyLevel" value="2"
                         className="selectDificultyLevel__radio"
                         checked={Number(this.state.difficultyLevel) === 2} />
-                    <span className="selectDificultyLevel__text">2</span>
+                    <span className="selectDificultyLevel__text selectDificultyLevel__text--orange">2</span>
                 </label>
-                <label className="selectDificultyLevel">
+                <label className="selectDificultyLevel ">
                     <input type="radio"
                         onChange={e => this.setDifficultyLevel(e)}
                         name="difficultyLevel"
                         value="3"
                         className="selectDificultyLevel__radio"
                         checked={Number(this.state.difficultyLevel) === 3} />
-                    <span className="selectDificultyLevel__text">3</span>
+                    <span className="selectDificultyLevel__text selectDificultyLevel__text--red">3</span>
                 </label>
             </Fragment>
         )

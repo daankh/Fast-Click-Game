@@ -46,6 +46,7 @@
             justify-content: center;
 
             transition: .3s;
+
         }
 
         &:hover .selectDificultyLevel__text,
@@ -59,7 +60,18 @@
         }
 
         &__radio:checked+.selectDificultyLevel__text {
-            background-color:$color-border-selection;
+  
+            &--green {
+                background-color: $color-bg-selection-1;
+            }
+
+            &--orange {
+                background-color: $color-bg-selection-2;
+            }
+
+            &--red {
+                background-color: $color-bg-selection-3;
+            }
         }
     }
 }
