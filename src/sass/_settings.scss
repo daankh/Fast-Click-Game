@@ -63,14 +63,26 @@
   
             &--green {
                 background-color: $color-bg-selection-1;
+
+                &:hover {
+                    color: $color-font-base
+                }
             } 
 
             &--orange {
                 background-color: $color-bg-selection-2;
+
+                &:hover {
+                    color: $color-font-base
+                }
             }
 
             &--red {
                 background-color: $color-bg-selection-3;
+
+                &:hover {
+                    color: $color-font-base
+                }
             }
         }
     }
