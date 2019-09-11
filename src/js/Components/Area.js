@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Settings from './Settings'
+import Game from './Game'
 
 class Area extends Component {
     constructor(props) {
@@ -53,7 +54,13 @@ class Area extends Component {
         if (this.state.game === true) {
             return (
                 <main className="area">
-                    <h1>Game</h1>
+                    <Game difficultyLevel={this.state.difficultyLevel}
+                        timeToClick={this.state.timeToClick}
+                        nextTimeMinus={this.state.nextTimeMinus}
+                        points={this.state.points}
+                        minusPoints={this.state.minusPoints}
+                        minTime={this.state.minTime}
+                    />
                 </main>
             )
         }
