@@ -1,8 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+$font-family-base: 'Roboto', sans-serif;
+
 //Colors
 $color-bg-body: #bdc3c7;
 $color-bg-area: #3498db;
+$color-bg-settings: #2c3e50;
+$color-bg-button: #e74c3c;
+$color-border-selection: #27ae60;
+
+$color-font-base: #ecf0f1;
 
 $box-shadow-area: 0 0 20px 4px #eee;
 
 //border radius
 $border-radius-base: 1rem;
+$padding-base: 1rem;
+
+$margin-bottom-base: 1rem;
+$margin-base: 1rem;
