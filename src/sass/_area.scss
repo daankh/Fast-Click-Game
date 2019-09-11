@@ -1,0 +1,11 @@
+.area {
+    background-color: $color-bg-area;
+    width: 90vw;
+    max-width: 1440px;
+    height: 90vh;
+
+    @include center(absolute); 
+    
+    box-shadow: $box-shadow-area;
+    border-radius: $border-radius-base * 4;
+}

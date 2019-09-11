@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 
 import './../sass/style.scss'; // adres do głównego pliku SASS
 
+import Area from './Components/Area'
+
 // import img from '../images/image.jpg';
 
 class App extends Component {
     render() {
-        return <h2>To tylko test!</h2>
+        return <Area />
     }
 }
 
