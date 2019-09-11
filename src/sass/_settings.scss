@@ -2,7 +2,7 @@
     @include center(absolute);
     background-color: $color-bg-settings;
     border-radius: $border-radius-base;
-    padding: $padding-base;
+    padding: $padding-base*2;
     width: 30vw;
     font-size: 1.6rem;
 

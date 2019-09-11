@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import Rules from './Rules'
 
 class Settings extends Component {
     constructor(props) {
@@ -65,6 +66,11 @@ class Settings extends Component {
                 <div className="settings__chooseDifficultyLevel">
                     {radios}
                 </div>
+                <Rules difficultyLevel={this.state.difficultyLevel}
+                    timeToClick={this.props.timeToClick}
+                    nextTimeMinus={this.props.nextTimeMinus}
+                    minusPoints={this.props.minusPoints}
+                    difficultyLevel={this.state.difficultyLevel} />
                 <input type="submit"
                     className="btn btn--new-game"
                     value="New Game"
