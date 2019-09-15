@@ -56,9 +56,15 @@ class Area extends Component {
         })
     }
 
-    setNewGame = () => {
+    resetGameParameters = () => {
         this.setState({
-            game: "start"
+            game: "start",
+            difficultyLevel: 1,
+            timeToClick: 3000,
+            nextTimeMinus: 100,
+            points: 0,
+            minusPoints: 0,
+            minTime: 100,
         })
     }
 
@@ -80,7 +86,7 @@ class Area extends Component {
         } else if (this.state.game === "finished") {
             return (
                 <main className="area">
-                    <Summary />
+                    <Summary points={this.state.points} resetGameParameters={this.resetGameParameters} />
                 </main>
             )
         }
