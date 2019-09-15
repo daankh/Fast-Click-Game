@@ -4,7 +4,16 @@ class Playground extends Component {
     constructor(props) {
         super(props)
 
-        this.state = {}
+        this.state = {
+            game: this.props.game,
+            difficultyLevel: this.props.difficultyLevel,
+            timeToClick: this.props.timeToClick,
+            currentTime: this.props.timeToClick,
+            nextTimeMinus: this.props.nextTimeMinus,
+            points: this.props.points,
+            minusPoints: this.props.minusPoints,
+            minTime: this.props.minusPoints,
+        }
     }
 
 
