@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import Settings from './Settings'
 import Game from './Game'
+import Summary from './Summary'
 
 class Area extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-            game: false,
+            game: "start",
             difficultyLevel: 1,
             timeToClick: 3000,
             nextTimeMinus: 100,
@@ -45,13 +46,25 @@ class Area extends Component {
 
     setStartGame = () => {
         this.setState({
-            game: true,
+            game: "game",
+        })
+    }
+
+    setEndGame = () => {
+        this.setState({
+            game: "finished",
+        })
+    }
+
+    setNewGame = () => {
+        this.setState({
+            game: "start"
         })
     }
 
     render() {
 
-        if (this.state.game === true) {
+        if (this.state.game === "game") {
             return (
                 <main className="area">
                     <Game difficultyLevel={this.state.difficultyLevel}
@@ -60,7 +73,14 @@ class Area extends Component {
                         points={this.state.points}
                         minusPoints={this.state.minusPoints}
                         minTime={this.state.minTime}
+                        setEndGame={this.setEndGame}
                     />
+                </main>
+            )
+        } else if (this.state.game === "finished") {
+            return (
+                <main className="area">
+                    <Summary />
                 </main>
             )
         }
