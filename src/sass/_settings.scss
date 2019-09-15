@@ -1,0 +1,89 @@
+.settings {
+    @include center(absolute);
+    background-color: $color-bg-settings;
+    border-radius: $border-radius-base;
+    padding: $padding-base*2;
+    width: 30vw;
+    font-size: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__heading {
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-bottom: $margin-bottom-base;
+    }
+
+    &__chooseDifficultyLevel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .selectDificultyLevel {
+
+        margin-bottom: $margin-bottom-base * 3;
+
+        &:not(:last-child) {
+            margin-right: $margin-base * 2;
+        }
+
+        &__text {
+            display: inline-block;
+            width: 6rem;
+            height: 6rem;
+            font-size: 4rem;
+            border: 2px solid $color-font-base;
+            border-radius: 50%;
+            cursor: pointer;
+
+            display:flex;
+            align-items: center;
+            justify-content: center;
+
+            transition: .3s;
+
+        }
+
+        &:hover .selectDificultyLevel__text,
+        &:active .selectDificultyLevel__text {
+            background-color:  $color-font-base;
+            color: $color-bg-settings;
+        }
+
+        &__radio {
+            display: none;
+        }
+
+        &__radio:checked+.selectDificultyLevel__text {
+  
+            &--green {
+                background-color: $color-bg-selection-1;
+
+                &:hover {
+                    color: $color-font-base
+                }
+            } 
+
+            &--orange {
+                background-color: $color-bg-selection-2;
+
+                &:hover {
+                    color: $color-font-base
+                }
+            }
+
+            &--red {
+                background-color: $color-bg-selection-3;
+
+                &:hover {
+                    color: $color-font-base
+                }
+            }
+        }
+    }
+}

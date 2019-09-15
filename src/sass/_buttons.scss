@@ -1,0 +1,19 @@
+.btn {
+    padding: $padding-base $padding-base * 3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    color: $color-font-base;
+    border: 2px solid $color-bg-button;
+    border-radius: $border-radius-base;
+    outline: none;
+    background-color: $color-bg-button;
+
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        background-color: $color-font-base;
+        color: $color-bg-button;
+    }
+}
