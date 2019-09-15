@@ -18,7 +18,7 @@ class Avatar extends Component {
 
         return (
             <div className={`avatar avatar--${this.props.type}`} style={position}
-                onClick={this.props.updateScore}>
+                onClick={this.props.updateScoreGame}>
                 <div className="avatar__head">
                     <div className="avatar__eye avatar__eye--left"></div>
                     <div className="avatar__eye avatar__eye--right"></div>
