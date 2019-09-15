@@ -9,6 +9,30 @@ Game built using React. Project made for training.
 * SASS
 * Webpack
 
+## Game rules
+
+### Level 1
+* Initial time to click: 3s.
+* Every 10 correct clicks you have 0.1s less to click next time.
+* The game ends when time reaches 0s, while avatar is green.
+* You get 1 point, when you click green object.
+* No minus points
+
+### Level 2
+* Initial time to click: 2.5s.
+* Every 10 correct clicks you have 0.15s less to click next time.
+* The game ends when time reaches 0s, while avatar is green.
+* You get 1 point, when you click green object.
+* You lose 4 points when you click red object.
+
+### Level 3
+
+* Initial time to click: 2s.
+* Every 10 correct clicks you have 0.2s less to click next time.
+* The game ends when time reaches 0s, while avatar is green.
+* You get 1 point, when you click green object.
+* You lose 8 points when you click red object.
+
 ## Installation
 
 1. Download project on yor computer.

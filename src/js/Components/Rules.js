@@ -29,7 +29,7 @@ class Rules extends Component {
                     <span>Every 10 correct clicks you have {this.props.nextTimeMinus / 1000}s less to click next time.</span>
                 </div>
                 <div className="row">
-                    <span>The game ends when time reaches 0s.</span>
+                    <span>The game ends when time reaches 0s, while avatar is green.</span>
                 </div>
                 <div className="row">
                     <span>You get 1 point, when you click green object.</span>
