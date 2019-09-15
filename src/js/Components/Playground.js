@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react';
 
+import Avatar from './Avatar';
+
 class Playground extends Component {
     constructor(props) {
         super(props)
@@ -13,14 +15,35 @@ class Playground extends Component {
             points: this.props.points,
             minusPoints: this.props.minusPoints,
             minTime: this.props.minusPoints,
+
+            max: 100,
+            min: 0,
+
+            avatarLeftPosition: this.getRandomNumber(0, 100),
+            avatarTopPosition: this.getRandomNumber(0, 100),
         }
     }
 
+    getRandomNumber(min, max) {
+        return Math.round(Math.random() * (max - min) + min)
+    }
+
+    setNewPosition() {
+        this.setState({
+            avatarLeftPosition: this.getRandomNumber(this.state.min, this.state.max),
+            avatarTopPosition: this.getRandomNumber(this.state.min, this.state.max)
+        })
+    }
 
     render() {
 
         return (
-            <h1>Playground</h1>
+            <div className="playground">
+                <div className="playground__render-area">
+                    <Avatar avatarLeftPosition={this.state.avatarLeftPosition}
+                        avatarTopPosition={this.state.avatarTopPosition} />
+                </div>
+            </div>
         )
     }
 }

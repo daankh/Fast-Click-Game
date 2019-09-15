@@ -1,0 +1,31 @@
+.avatar {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 5rem;
+    height: 7rem;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: background-color .2s;
+
+    &--green {
+        background-color: $bgc-avatar-good--light;
+        
+
+        &:hover,
+        &:active {
+            background-color: $bgc-avatar-good;
+        }
+    }
+
+    &--red {
+        background-color: $bgc-avatar-bad--light;
+
+        &:hover,
+        &:active {
+            background-color: $bgc-avatar-bad;
+        }
+}
+    }
+
