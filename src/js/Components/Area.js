@@ -68,6 +68,12 @@ class Area extends Component {
         })
     }
 
+    updateScore = (points) => {
+        this.setState({
+            points: this.state.points + points,
+        })
+    }
+
     render() {
 
         if (this.state.game === "game") {
@@ -80,6 +86,7 @@ class Area extends Component {
                         minusPoints={this.state.minusPoints}
                         minTime={this.state.minTime}
                         setEndGame={this.setEndGame}
+                        updateScore={this.updateScore}
                     />
                 </main>
             )
